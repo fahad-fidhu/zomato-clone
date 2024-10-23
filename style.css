@@ -1,0 +1,769 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+}
+header{
+    background: url(https://b.zmtcdn.com/web_assets/81f3ff974d82520780078ba1cfbd453a1583259680.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 450px;
+
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    height: 70px;
+    margin: 0 auto;
+}
+.applink a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+nav .navitems ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+nav .navitems ul li a{
+    text-decoration: none;
+    color: white;
+    margin: 0 20px;
+    font-size: 1rem;
+    font-weight: lighter;
+
+
+}
+.contents{
+    color: white;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+
+
+}
+.content img{
+    width: 300px;
+
+height: 60px;
+}
+.content h1{
+    font-size: 2.2rem;
+    font-weight: 100;
+    margin: 30px 0;
+
+}
+.content h1 span{
+    font-weight: 600;
+}
+.searchbar{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    height: 3.3rem;
+    width: 55%;
+    border-radius: 8px;
+
+}
+.searchbar .leftsearch, .searchbar .rightsearch{
+    display: inline-flex;
+    padding: 0 1rem;
+
+
+}
+.searchbar .leftsearch{
+    width: 30%;
+    border: 2px solid;
+
+
+}
+.searchbar .rightsearch{
+    width: 70%;
+    
+
+}
+.searchbar input{
+    border: 0;
+    outline: none;
+    font-size: 1rem;
+    background: transparent;
+    counter-reset: grey;
+    width: 100%;
+    margin-left: 6px;
+
+}
+.searchbar .leftsearch i{
+    color: rgb(228, 127, 127);
+    font-size: 20px;
+}
+.searchbar .rightsearch i{
+    color: rgb(126, 119, 119);
+    font-size: 20px;
+}
+.padding1{
+    padding: 200px;
+}
+.ordersection{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+   
+    
+    
+    
+
+}
+.ordersection .order{
+    
+     display: grid;
+    
+    grid-template-columns: repeat(2,40%);
+    grid-template-rows: repeat(1,70%);
+    gap: 50px;
+    justify-content: space-between;
+    
+    width: 100%;
+    margin-top: 4%;
+    margin-bottom: 40px;
+    text-align: center; 
+}
+
+
+.order .ordercard{
+   
+    /* width: 30%; */
+    border:  2px solid grey;
+    transition: transform 0.5s;
+    border-radius: 8px;
+
+}
+
+.content{
+    /* border: solid; */
+    margin-top: -70px;
+    width: 100%;
+    padding: 0px 12px;
+    
+    
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    text-align: left;
+    font-size: small;
+    
+
+}
+ /* .ordercard .content{
+   border: solid;
+    margin-top: -30px;
+   background-color: white;
+   position: absolute;
+  
+   
+   
+}  */
+.ordercard .heading {
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+    font-size: large;
+    
+
+    
+
+}
+.ordercard .text{
+    color: grey;
+
+}
+
+.ordercard img{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 8px;
+}
+.order .ordercard:hover{
+    transform: scale(1.1);
+
+}
+.collection{
+    /* border: solid 1px; */
+    margin-top: 100px;
+    width: 100%;
+   
+}
+.collectionparts{
+    display: flex;
+    justify-content: space-between;
+}
+.collectionhead p{
+    color: grey;
+    font-size: larger;
+}
+.collectionextra{
+    color: red;
+}
+.collectionextra a{
+   text-decoration: none;
+   color: red;
+}
+.menuicon{
+    color: white;
+    font-size: 30px;
+    display: none;
+
+}
+.collectioncard{
+    display: grid;
+    grid-template-columns: repeat(4,24%);
+    grid-template-rows: repeat(1,70%);
+    column-gap: 5px;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+.card2 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+.content2{
+    font-size: medium;
+    color: white;
+    font-weight: bold;
+    margin-top: -70px;
+    background: none;
+    margin-left: 20px;
+    
+}
+
+.localitys{
+    width: 100%;
+    margin-top: 50px;
+}
+.localityshead h2{
+    color: rgb(53, 52, 52);
+}
+.localitysplaces{
+    margin-top: 40px;
+    /* border: solid 1px; */
+    display: grid;
+    grid-template-columns: repeat(3,35%);
+    gap: 10px;
+    grid-template-rows: repeat(3,30%);
+    justify-content: space-between;
+    
+    
+}
+.localitysplaces a{
+    text-decoration: none;
+    color: black;
+}
+.pl1{
+    border: solid 1px ;
+    border-radius: 8px;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 20px;
+    
+    display: flex;
+    gap: 30px;
+    
+    
+}
+.place{
+    padding: 10px;
+}
+.place h2{
+    font-weight: 100;
+    font-size: large;
+}
+.arrow{
+    margin-top: 7%;
+}
+.pl1:hover{
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+}
+.seemore{
+    padding: 10px;
+}
+.login{
+    background-color: rgb(252, 246, 244);
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.loginthings{
+    padding: 80px;
+}
+
+.mobile img{
+    width: 400px;
+
+}
+.downloadapp{
+    display: flex;
+    gap: 5px;
+
+}
+.downloadapp img{
+    width: 130px;
+}
+/* explore */
+.explore{
+    padding: 150px;
+}
+.option{
+    background-color: white;
+    width: 100%;
+    border: 0;
+    outline: none;
+    border: 1px solid gray;
+    text-align: left;
+    padding: 25px 15px;
+    margin: 20px;
+    border-radius: 8px;
+    color: grey;
+}
+.option button{
+    background: 0;
+    border: 0;
+    font-size: 1.1rem;
+}
+.footer{
+    background-color: rgb(244, 242, 240);
+}
+.zomato{
+    padding: 200px;
+}
+.india{
+    display: flex;
+    gap: 5px;
+    text-align: center;
+}
+
+.boxes{
+    border: solid 1px gray;
+    border-radius: 8px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    width: 200px;
+    height: 70px;
+    justify-content: center;
+    padding: 10px;
+    
+}
+.boxes h1{
+    font-size: larger;
+    padding: 15px;
+}
+.boxes i{
+    font-size: 50px;
+   
+}
+.boxes img{
+    width: 50px;
+}
+.countrys{
+    display: flex;
+    justify-content: space-between;
+}
+.zomat{
+    width: 100%;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(5,20%);
+    
+    /* border: solid; */
+    gap: 20px;
+    justify-content: center;
+
+}
+.zomato1{
+    /* border: solid; */
+    gap: 5px;
+
+}
+.zomato1 h1{
+    font-size: larger;
+}
+.zomato1 li{
+    display: block;
+    color: black;
+}
+.zomato1 a{
+    text-decoration: none;
+    color: grey;
+
+}
+.app{
+    width: 100%;
+}
+.apps img{
+    width: 50%;
+    height: 100%;
+    justify-content: center;
+    margin-top: 10px;
+    
+    
+}
+.cr{
+    color: gray;
+}
+
+
+
+
+
+@media (max-width: 760px) {
+    .menuicon{
+        display: block;
+    }
+    .applink a, nav .navitems ul{
+        display: none;
+        
+    }
+    .contents h1{
+        font-size: 1.5rem;
+    }
+    .contents img{
+         width: 250px;
+
+    }
+    /* fghgfggfghfgfgfgfgf */
+   
+   
+.padding1{
+    padding-left: 20px;
+    padding-right: 30px;
+}
+.ordersection{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+   
+    
+    
+    
+
+}
+.order{
+    
+     display: grid;
+    
+    grid-template-columns: repeat(2,40%);
+    grid-template-rows: repeat(1,70%);
+    gap: 50px;
+    justify-content: space-between;
+    
+    width: 100%;
+    margin-top: 4%;
+    margin-bottom: 40px;
+    text-align: center; 
+}
+
+
+.ordercard{
+   
+    /* width: 30%; */
+    border:  2px solid grey;
+    transition: transform 0.5s;
+    border-radius: 8px;
+
+}
+
+.content{
+    /* border: solid ; */
+    margin-top: -40px;
+    width: 100%;
+    /* padding: 0px 12px; */
+    
+    
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    text-align: left;
+    font-size: small;
+    
+
+}
+ /* .ordercard .content{
+   border: solid;
+    margin-top: -30px;
+   background-color: white;
+   position: absolute;
+  
+   
+   
+}  */
+.ordercard .heading {
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+    font-size: small;
+    
+
+    
+
+}
+.ordercard .text{
+    color: grey;
+
+}
+
+.ordercard img{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 8px;
+}
+.order .ordercard:hover{
+    transform: scale(1.1);
+
+}
+
+.collection{
+    /* border: solid 1px; */
+    margin-top: 100px;
+    width: 100%;
+   
+}
+.collectionparts{
+    display: flex;
+    justify-content: space-between;
+}
+.collectionhead p{
+    color: grey;
+    font-size: larger;
+}
+.collectionextra{
+    color: red;
+}
+.collectionextra a{
+   text-decoration: none;
+   color: red;
+}
+.menuicon{
+    color: white;
+    font-size: 30px;
+    display: block;
+
+}
+.collectioncard{
+    display: grid;
+    grid-template-columns: repeat(4,24%);
+    grid-template-rows: repeat(1,70%);
+    column-gap: 5px;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+.card2 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+.content2{
+    font-size: medium;
+    color: white;
+    font-weight: bold;
+    margin-top: -70px;
+    background: none;
+    margin-left: 20px;
+    
+}
+
+.localitys{
+    width: 100%;
+    margin-top: 50px;
+}
+.localityshead h2{
+    color: rgb(53, 52, 52);
+}
+.localitysplaces{
+    margin-top: 40px;
+    /* border: solid 1px; */
+    display: grid;
+    grid-template-columns: repeat(3,30%);
+    gap: 10px;
+    grid-template-rows: repeat(3,30%);
+    justify-content: space-between;
+    
+    
+}
+.localitysplaces a{
+    text-decoration: none;
+    color: black;
+}
+.pl1{
+    border: solid 1px ;
+    border-radius: 8px;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 20px;
+    
+    display: flex;
+    gap: 30px;
+    
+    
+}
+.place{
+    padding: 10px;
+}
+.place h2{
+    font-weight: 100;
+    font-size: large;
+}
+.arrow{
+    margin-top: 7%;
+}
+.pl1:hover{
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+}
+.seemore{
+    padding: 10px;
+}
+.login{
+    background-color: rgb(252, 246, 244);
+    display: block;
+    justify-content: center;
+    margin-top: 20px;
+}
+.loginthings{
+    padding: 80px;
+
+}
+
+.mobile img{
+    
+    width: 400px;
+
+}
+.downloadapp{
+    display: flex;
+    gap: 5px;
+
+}
+.downloadapp img{
+    width: 130px;
+}
+
+
+/* explore */
+.explore{
+    padding-left: 10px;
+}
+.option{
+    background-color: white;
+    width: 100%;
+    border: 0;
+    outline: none;
+    border: 1px solid gray;
+    text-align: left;
+    padding: 25px 15px;
+    margin: 20px;
+    border-radius: 8px;
+    color: grey;
+}
+.option button{
+    background: 0;
+    border: 0;
+    font-size: 1.1rem;
+}
+.footer{
+    background-color: rgb(244, 242, 240);
+}
+.zomato{
+    padding: 50px;
+}
+.india{
+    display: flex;
+    gap: 5px;
+    text-align: center;
+}
+
+.boxes{
+    border: solid 1px gray;
+    border-radius: 8px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    width: 100px;
+    height: 50px;
+    justify-content: center;
+    /* padding: 10px; */
+    
+}
+.boxes h1{
+    font-size: larger;
+    padding: 15px;
+}
+.boxes i{
+    font-size: 30px;
+   
+}
+.boxes img{
+    width: 30px;
+}
+.countrys{
+    display: flex;
+    justify-content: space-between;
+}
+.zomat{
+    width: 100%;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(5,20%);
+    
+    /* border: solid; */
+    gap: 20px;
+    justify-content: center;
+
+}
+.zomato1{
+    /* border: solid; */
+    gap: 5px;
+
+}
+.zomato1 h1{
+    font-size: larger;
+}
+.zomato1 li{
+    display: block;
+    color: black;
+}
+.zomato1 a{
+    text-decoration: none;
+    color: grey;
+
+}
+.app{
+    width: 100%;
+}
+.apps img{
+    width: 50%;
+    height: 100%;
+    justify-content: center;
+    margin-top: 10px;
+    
+    
+}
+.cr{
+    color: gray;
+}
+
+}
